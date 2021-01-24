@@ -2,8 +2,6 @@
   <v-app
     id="dashboard-view"
     dark>
-    <core-filter />
-
     <core-toolbar />
 
     <core-drawer />
@@ -29,7 +27,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>

@@ -74,6 +74,12 @@
           to="/dashboard/user-profile">
           <v-icon color>mdi-account</v-icon>
         </router-link>
+        <router-link
+          v-ripple
+          class="toolbar-items"
+          to="/dashboard/calculator">
+          <v-icon color>mdi-calculator</v-icon>
+        </router-link>
 
         <v-icon
           class="toolbar-items"
@@ -96,7 +102,7 @@ export default {
       'Another Notification',
       'Another One - Dj Khalid voice'
     ],
-    title: 'I got a digital dash -Future Hendrixx',
+    title: 'Have a nice trade',
     responsive: false,
     responsiveInput: false
   }),

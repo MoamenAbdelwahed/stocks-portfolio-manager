@@ -62,6 +62,14 @@ export default [
         component: () => import(`@/components/DashViews/UserProfile.vue`)
       },
       {
+        path: 'calculator',
+        meta: {
+          name: 'Calculator',
+          requiresAuth: true
+        },
+        component: () => import(`@/components/DashViews/Calculator.vue`)
+      },
+      {
         path: 'notifications',
         meta: {
           name: 'Notifications',
