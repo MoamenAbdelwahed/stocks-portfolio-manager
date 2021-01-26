@@ -9,14 +9,13 @@ export default {
       axios.post('/users/login', { email: userData.email, password: userData.password })
         .then(response => {
           const token = response.data.token
-          const user = response.data.userId
-          console.log(response)
+          const username = response.data.firstName + ' ' + response.data.lastName
           // storing jwt in localStorage. https cookie is safer place to store
           localStorage.setItem('token', token)
-          localStorage.setItem('user', user)
+          localStorage.setItem('username', username)
           axios.defaults.headers.common['Authorization'] = 'Bearer ' + token
           // mutation to change state properties to the values passed along
-          commit('auth_success', { token, user })
+          commit('auth_success', { token, username })
           resolve(response)
         })
         .catch(err => {
