@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: '/stocks-portfolio-manager/',
+  publicPath: '/',
   devServer: {
     disableHostCheck: true,
     headers: { 'Access-Control-Allow-Origin': '*' }
