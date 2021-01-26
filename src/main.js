@@ -26,7 +26,7 @@ import Vue2Editor from 'vue2-editor'
 
 Vue.prototype.$http = axios
 // Sets the default url used by all of this axios instance's requests
-axios.defaults.baseURL = 'http://localhost:3000/'
+axios.defaults.baseURL = process.env.VUE_APP_API_URL
 axios.defaults.headers.get['Accept'] = 'application/json'
 axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*'
 

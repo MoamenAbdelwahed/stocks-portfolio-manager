@@ -25,7 +25,7 @@
               contain />
           </v-list-tile-avatar>
           <v-list-tile-title class="title">
-            Vuetify Admin Dash
+            {{ username }}
           </v-list-tile-title>
         </v-list-tile>
         <v-divider />
@@ -61,6 +61,7 @@ import { mapMutations, mapState } from 'vuex'
 export default {
   data: () => ({
     logo: require('@/assets/img/redditicon.png'),
+    username: localStorage.getItem('username'),
     links: [
       {
         to: '/',
@@ -71,56 +72,6 @@ export default {
         to: '/dashboard/user-profile',
         icon: 'mdi-account',
         text: 'User Profile'
-      },
-      {
-        to: '/dashboard/user-groups',
-        icon: ' mdi-account-group ',
-        text: 'User Groups'
-      },
-      {
-        to: '/dashboard/articles',
-        icon: 'mdi-file-document ',
-        text: 'Articles'
-      },
-      {
-        to: '/dashboard/tags',
-        icon: ' mdi-pound-box ',
-        text: 'Tags'
-      },
-      {
-        to: '/dashboard/categories',
-        icon: ' mdi-shape ',
-        text: 'Categories'
-      },
-      {
-        to: '/dashboard/images',
-        icon: ' mdi-image-area ',
-        text: 'Images'
-      },
-      {
-        to: '/dashboard/country',
-        icon: 'mdi-apple-safari',
-        text: 'Countries'
-      },
-      {
-        to: '/dashboard/TicketLocks',
-        icon: 'mdi-ticket',
-        text: 'Ticket Locks'
-      },
-      {
-        to: '/dashboard/author',
-        icon: 'mdi-table-edit',
-        text: 'Authors'
-      },
-      {
-        to: '/dashboard/city',
-        icon: 'mdi-chart-bubble',
-        text: 'City'
-      },
-      {
-        to: '/dashboard/section',
-        icon: 'mdi-table-edit',
-        text: 'Sections'
       },
       {
         to: '/dashboard/notifications',
