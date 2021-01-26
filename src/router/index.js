@@ -22,7 +22,7 @@ Vue.use(Router)
 // Create a new router
 const router = new Router({
   base: '/stocks-portfolio-manager',
-  mode: 'history',
+  mode: 'hash',
   routes: paths,
 
   scrollBehavior (to, from, savedPosition) {
