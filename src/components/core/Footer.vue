@@ -35,8 +35,8 @@ export default {
   data: () => ({
     links: [
       { name: 'Home', Link: '/dashboard' },
-      { name: 'Demo', Link: 'https://clintoxx.github.io/vuetify-admin-dashboard/' },
-      { name: 'GitHub', Link: 'https://github.com/ClintOxx' }
+      { name: 'Demo', Link: '' },
+      { name: 'GitHub', Link: '' }
     ]
   })
 }
